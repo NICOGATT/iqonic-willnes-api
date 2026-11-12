@@ -1,4 +1,4 @@
-# IQONIC THRIVE · API (Express + Supabase + Stripe)
+# IQONIC WELLNESS · API (Express + Supabase + Stripe)
 
 API REST para el catálogo, los pagos con tarjeta (Stripe Checkout) y los enlaces de WhatsApp.
 Usa la **misma tabla `products`** de Supabase que la web en Next.js (`../iqonic-thrive`).
