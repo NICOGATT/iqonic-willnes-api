@@ -31,6 +31,8 @@ Sin `STRIPE_SECRET_KEY` la API arranca igual: productos y WhatsApp funcionan y e
 | GET | `/api/products` | — | Productos visibles (`?category=gummies\|energy\|hydration`) |
 | GET | `/api/products/:idOrSlug` | — | Un producto |
 | POST | `/api/products` | `x-api-key` | Crear producto |
+| GET | `/api/packages` | — | Paquetes visibles con su contenido, precio, ahorro y enlace de WhatsApp |
+| GET | `/api/packages/:idOrSlug` | — | Un paquete |
 | POST | `/api/create-checkout-session` | — | Crea el pago en Stripe y devuelve `url` |
 | POST | `/api/whatsapp-link` | — | Devuelve el enlace de WhatsApp del producto |
 | POST | `/api/webhooks/stripe` | Firma de Stripe | Stripe avisa de pagos completados |

@@ -5,6 +5,7 @@ import { config } from "./config.js";
 import { stripe } from "./lib/stripe.js";
 import { errorHandler, notFound } from "./middleware/errors.js";
 import { checkoutRouter } from "./routes/checkout.js";
+import { packagesRouter } from "./routes/packages.js";
 import { productsRouter } from "./routes/products.js";
 import { webhooksRouter } from "./routes/webhooks.js";
 
@@ -44,6 +45,7 @@ app.get("/api/health", (_req, res) => {
 });
 
 app.use("/api/products", productsRouter);
+app.use("/api/packages", packagesRouter);
 app.use("/api", checkoutRouter);
 
 app.use(notFound);
